@@ -76,20 +76,21 @@ su windows eliminare -- BEGIN CERTIFICATE -- END CERTIFICATE ---
 ## inserisco il base64 firmato in questo template
 ``` xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://ivaservizi.agenziaentrate.gov.it/docs/wsdl/ServiziMassivi/v1.0/types">
-  <soapenv:Header/>
-  <soapenv:Body>
-    <typ:InoltroRichiestaRequest>
-      <ns1:FileRichiesta xmlns:ns1="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/ServiziMassivi/input/RichiestaServiziMassivi/v1.0"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/ServiziMassivi/input/RichiestaServiziMassivi/v1.0
-       RichiestaServiziMassivi_v1.0.xsd" versione="1.0"
-      >
-        <TipoRichiesta>FATT</TipoRichiesta>
-	      <NomeFile>RichiestaMassiva.xml.p7m</NomeFile>
-	      <File>QUI_IL_BASE64_DEL_FILE_FIRMATO</File>
-      </ns1:FileRichiesta>
-    </typ:InoltroRichiestaRequest>
-  </soapenv:Body>
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:InoltroRichiestaRequest>
+         <FileRichiesta xmlns:ns1="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/ServiziMassivi/input/RichiestaServiziMassivi/v1.0"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/ServiziMassivi/input/RichiestaServiziMassivi/v1.0 RichiestaServiziMassivi_v1.0.xsd"
+          versione="1.0"
+         >
+	   <NomeFile>gennaio2025.xml.p7m</NomeFile>
+	   <File>
+             QUI_IL_BASE64_DEL_FILE_FIRMATO
+           </File>
+         </FileRichiesta>
+      </typ:InoltroRichiestaRequest>
+   </soapenv:Body>
 </soapenv:Envelope>
 ```
 
