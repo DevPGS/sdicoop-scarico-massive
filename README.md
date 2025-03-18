@@ -164,7 +164,7 @@ Per scaricare i file bisognerà chiamare un nuovo endpoint [https://servizi.fatt
 </soapenv:Envelope>
 ```
 
-La risposta sarà tipo questa, per vedere il payload seguire [Hint per Soap-UI](hint-per-soap-ui) 
+La risposta sarà tipo questa, per vedere il payload seguire [hint-per-soap-ui](https://github.com/DevPGS/sdicoop-scarico-massive?tab=readme-ov-file#hint-per-soap-ui)
 ``` xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
   <soapenv:Body>
